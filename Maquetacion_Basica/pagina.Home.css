@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+    .Barra{
+        background-color: black;
+        height: 5vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contenedor1{
+        height: 94vh;
+        margin: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .contenedor2{
+            width: 50%;
+            height: 80%;
+        }
+        .imagen{
+            width: 25%;
+            height: 80%;
+        }
+        .imagen img{
+            width: 100%;
+            height: 100%;
+        }
+        p{
+            font-size: 20px;
+        }
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+        

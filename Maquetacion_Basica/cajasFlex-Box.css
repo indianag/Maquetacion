@@ -1,0 +1,70 @@
+*{
+    border-radius: 5px;
+    margin: 1px;
+}
+.container{
+    border: 10px solid rgba(206, 200, 200, 0.616);
+    width: 30%;
+    border-radius: 15px;
+    height: 95vh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.Header{
+    border: 5px solid rgb(176, 237, 84);
+    height: 100px;
+}
+.Nav{
+    border: 5px solid rgb(219, 156, 182);
+    height: 65px;
+}
+.container2{
+    height: 700px;
+    display: flex;
+    
+}
+    .Article{
+        border: 5px solid rgb(29, 127, 238);
+        width: 70%;
+
+        display:flex;
+        flex-flow: column;
+        justify-content:space-between;
+    }
+    .encabezado{
+        border: 5px solid rgb(194, 247, 120);
+        height: 50px;
+    }
+        .contenedor3{
+        height: 90%;
+        display:flex;
+        flex-flow: column;
+        justify-content:flex-end;        
+        }  
+            .Section{
+            border: 5px solid rgb(167, 70, 187);
+            height: 50px;
+
+            }
+            .flooter{
+            border: 5px solid rgb(228, 226, 116);
+            height: 25px
+            }
+    .Div{
+        border: 5px solid rgba(247, 196, 87, 0.979);
+        width: 30%;
+
+        display:flex;
+        flex-flow: column;
+        justify-content:flex-end;
+    }
+        .Aside{
+            border: 5px solid rgb(47, 216, 228);
+            height: 90%;
+        }
+.Footer{
+    border: 5px solid rgb(228, 226, 116);
+    height: 50px;
+}
