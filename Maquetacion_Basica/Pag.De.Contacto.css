@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 3px solid black; */
+    height: 100vh;
+    background-color: rgb(10, 93, 237) ;
+}
+.container1{
+    /* border: 3px solid red; */
+    height: 8vh;
+    background-color: rgb(5, 5, 5);
+    position: fixed;
+    top:0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+    .Logo{
+        /* border: 3px solid blue; */
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:flex-end;
+
+        
+     }
+    .Logo a img{
+          background-repeat: no-repeat;
+          background-size: 10%;
+          background-position-x: right;
+          background-position-y:center;
+    }
+    .Barra{
+        /* border: 3px solid yellowgreen; */
+        width: 60%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    
+    }
+    .Barra li a{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+        padding: 12px 10px;
+        display:block;
+    }
+    ul, ol{
+        list-style: none;
+    }
+    
+    .Barra li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    
+    }
+    
+    .Barra li:hover > ul{
+        display: block;
+    }
+    .Barra li a:hover{
+        background-color: black;
+    }
+.contenido{
+    /* border: 3px solid rgb(95, 36, 36); */
+    background-color: rgb(10, 93, 237);
+    height: 92vh;
+    
+}
+ .contenido1{
+    /* border: 3px solid rgb(222, 228, 227); */
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+  
+}
+.container2{
+    /* border: 3px solid rgb(131, 182, 22); */
+    width: 70%;
+}
+    .titulo{
+        /* border: 3px solid rgb(181, 79, 79); */
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        height: 15vh;
+    }
+    .subtitulo{
+        /* border: 3px solid rgb(14, 173, 62); */
+        height: 10vh;
+    }
+    .imput-group{
+        /* border: 3px solid black; */
+        height: 56vh;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    input,textarea{
+        padding: 10px 10px;
+        background-color: transparent;
+        border-style: none none solid none;
+        border-color: white;
+        text-decoration: none;
+        outline: none;
+    }
+    input::placeholder, textarea::placeholder{
+        color:white;
+    }
+    .terminosYcondiciones{
+        /* border: 3px solid rgb(105, 17, 17); */
+        height: 5vh;
+    }
+    .enviar{
+        /* border: 3px solid rgb(237, 237, 10); */
+        height: 5vh;
+        background-color: blue;
+        font-family: Georgia, 'Times New Roman', Times;
+        color: white;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+.imagen{
+    /* border: 3px solid rgb(172, 58, 120); */
+    width: 45%;
+    margin-left: 5%;
+
+    background-image: url(./imagen1codenotch.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+
