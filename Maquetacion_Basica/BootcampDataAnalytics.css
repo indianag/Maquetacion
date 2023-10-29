@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 3px solid black; */
+    height: 180vh;
+}
+.container1{
+    /* border: 3px solid red; */
+    height: 8vh;
+    background-color: rgb(5, 5, 5);
+    position: fixed;
+    top:0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.Logo{
+    /* border: 3px solid blue; */
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-end;  
+}
+.Logo a img{
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: right;
+    background-position-y:center;
+}
+    .Barra{
+        /* border: 3px solid yellowgreen; */
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    
+    }
+    a{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+        padding: 12px 10px;
+        display:block;
+    }
+    ul, ol{
+        list-style: none;
+    }
+    .Barra li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    .Barra li:hover > ul{
+        display: block;
+    }
+    .Barra li a:hover{
+        background-color: black;
+    }
+.cursoData{
+    /* border: 3px solid rgb(255, 0, 174); */
+    height: 40vh;
+
+    background-image: url(./DataAnalytics.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;  
+    align-content: flex-start;
+    
+}
+    .TextData{
+        /* border: 3px solid yellow; */
+        width: 82%; 
+    }
+    h1{
+        color: white;
+        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    h2{
+        color: white;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h3{
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .info{
+        background-color: blue;
+        width: 10%;
+        height: 10%;
+        margin-right: 72%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+.container2{
+    /* border: 3px solid rgb(210, 207, 16); */
+    height: 100vh;
+    margin: 5% 15% 10% 15%;
+
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .imagenFullTime{
+        /* border: 3px solid royalblue; */
+        width: 49%;
+        height: 50%;
+
+        background-image: url(./FullTimeDataAnalytics.png);
+        background-size: cover;
+
+        display: flex;
+        align-content:flex-end;
+    }
+    .fullTime{
+        /* border: 3px solid rgb(225, 65, 214); */
+        width: 49%;
+        height: 50%;
+    }
+        .titulo{
+            height: 20%;
+        }
+        .subtitulo{
+            height: 10%;
+        }
+        .detalle{
+            /* border: 3px solid black; */
+            height: 70%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    .partTime{
+        /* border: 3px solid rgb(65, 225, 161); */
+        width: 49%;
+        height: 50%;
+    }
+    .imagenPartTime{
+        /* border: 3px solid rgb(79, 49, 3); */
+        width: 49%;
+        height: 50%;
+        background-image: url(./PartTimeDataAnalytics.png);
+    }
+.container3{
+    border: 3px solid black;
+    background-color: black;
+    height: 30vh;
+}
+    .informacion{
+        /* border: 3px solid rgb(97, 63, 172); */
+        height: 30vh;
+        margin: 0% 20% 0% 20%;
+
+        display: flex;
+        justify-content: stretch;
+    }   
+        .texto{
+            /* border: 3px solid rgb(177, 114, 148); */
+            width: 65%;
+            height: 100%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+        }
+        .iconoAzul{
+            /* border: 3px solid rgb(50, 143, 183); */
+            width: 25%;
+            height: 100%;
+            
+            background-image: url(./fullStack.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: 70%;
+        }
+    
