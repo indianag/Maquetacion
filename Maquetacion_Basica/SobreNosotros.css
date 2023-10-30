@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 .container{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     height: 110vh;
 }
 .container1{
-    border: 3px solid rgb(9, 9, 9);
+    /* border: 3px solid rgb(9, 9, 9); */
     background-color: white;
     height: 10vh;
     position: fixed;
@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
     .logotipo{
-        border: 3px solid rgb(219, 222, 56);
+        /* border: 3px solid rgb(219, 222, 56); */
         width: 40%;
         height: 100%;
 
@@ -30,7 +30,7 @@
        
     }
     .menu{
-        border: 3px solid maroon;
+        /* border: 3px solid maroon; */
         width: 60%;
         height: 100%;
 
@@ -79,7 +79,7 @@
         
     }
         .titulo{
-            border: 3px solid aquamarine;
+            /* border: 3px solid aquamarine; */
             height: 55vh;
             color: white;
 
@@ -95,7 +95,7 @@
             font-size: 40px;
         }
 .subcontainer{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     height: 39vh;
     margin-top: 5%;
 
@@ -105,7 +105,7 @@
     align-items: center;
     }
     .garantia{
-        border:3px solid white;
+        /* border:3px solid white; */
         width: 30%;
         height: 60%;
 
@@ -115,7 +115,7 @@
         align-items:center;  
     }
     .atencion{
-        border:3px solid white;
+        /* border:3px solid white; */
         width: 30%;
         height: 60%;
 
@@ -125,7 +125,7 @@
         align-items:center; 
     }
     .reservas{
-        border:3px solid white;
+        /* border:3px solid white; */
         width: 30%;
         height: 60%;
 
@@ -145,7 +145,7 @@
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .container3{
-        border:3px solid black;
+        /* border:3px solid black; */
         height: 100vh;
     }
     .textoPrincipal{
@@ -189,7 +189,7 @@
         font-size: 25px;
     }
 .container5{
-    border:3px solid yellow;
+    /* border:3px solid yellow; */
     height: 100vh;
 }
     .sede{
@@ -208,7 +208,7 @@
         font-size: 20px;
     }
     .container6{
-        border:3px solid yellow;
+        /* border:3px solid yellow; */
         height: 75vh;
 
         display: flex;
@@ -232,7 +232,7 @@
             /* border:3px solid rgb(8, 92, 10); */
             width: 30%;
             height: 100%;
-        }
+        } 
 
 
 
