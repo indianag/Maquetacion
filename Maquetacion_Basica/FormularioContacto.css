@@ -63,6 +63,8 @@
 .contenido{
     /* border: 3px solid red; */
     height: 100vh;
+    display: flex;
+    
 
     background-image: url(./formulario.jpg);
     background-repeat: no-repeat;
@@ -72,8 +74,7 @@
 .contenido{
     /* border: 3px solid rgb(95, 36, 36); */
     background-color: rgb(10, 93, 237);
-    height: 92vh;
-    
+    height: 92vh; 
 }
  .contenido1{
     /* border: 3px solid rgb(222, 228, 227); */
@@ -151,15 +152,16 @@
     .filtro{
         /* border: 2px solid red; */
         width: 30vw;
-        height: 38vh;
-        background-color: rgba(255, 166, 0, 0.516);
+        height: 78vh;
+        margin-left: 100px;
         
     }
         .tarjeta{
-            border: 1px solid rgb(5, 5, 5);
-            height: 8vh;
+            /* border: 1px solid rgb(5, 5, 5); */
+            height: 10vh;
             color: white;
             font-size: 25px;
+            background-color: rgba(9, 9, 9, 0.648);
 
             display: flex;
             flex-direction: column;
@@ -168,8 +170,9 @@
           
         }
         #resultado{
-            border: 1px solid rgb(5, 5, 5);
-            height: 30vh;
+            /* border: 1px solid rgb(5, 5, 5); */
+            background-color: rgba(9, 9, 9, 0.516);
+            height: 68vh;
             color: white;
             font-size: 25px;
             display: flex;
@@ -180,6 +183,17 @@
 #resultado p{
 color:white;
 font-size: 30px;
+}
 
+#resultado div {
+    /* border: solid red 2px; */
+    background-color: rgba(236, 139, 12, 0.523);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
 }
