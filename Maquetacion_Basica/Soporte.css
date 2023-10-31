@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 3px solid red; */
+    height: 100vh;
+    
+}
+.container1{
+    /* border: 3px solid rgb(9, 9, 9); */
+    background-color: white;
+    height: 10vh;
+    position: fixed;
+    top:0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+    .logotipo{
+        /* border: 3px solid rgb(219, 222, 56); */
+        width: 40%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:flex-end;  
+       
+    }
+    .menu{
+        /* border: 3px solid maroon; */
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .menu a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-decoration: none;
+        padding: 12px 10px;
+        display:block;
+    }
+    ul, ol{
+        list-style: none;
+    }
+    .menu li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    .menu li:hover > ul{
+        display: block;
+    }
+    .menu li a:hover{
+        background-color: rgb(199, 93, 27);
+    }
+.informacion{
+    /* border: 3px solid red; */
+    height: 100vh;
+}
+    .barra1{
+    /* border: 3px solid rgb(136, 205, 223); */
+    height: 100vh;
+    color: rgb(182, 118, 7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./atencion\ al\ cliente.jpg);
+
+    }
+        .texto{
+            /* border: 3px solid rgb(195, 255, 0); */
+            height: 35vh;
+            font-size: 20px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .contacto{
+            /* border: 3px solid red; */
+            height: 20vh;
+
+            display:flex;
+            justify-content: center;
+        }
+            .tlf{
+                /* border: 3px solid rgb(217, 176, 15); */
+                height: 19vh;
+                width: 260px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+
+            }
+            .email{
+                /* border: 3px solid rgb(217, 176, 15); */
+                height: 19vh;
+                width: 260px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .formulario{
+                /* border: 3px solid rgb(217, 176, 15); */
+                height: 19vh;
+                width: 260px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .soporte{
+                /* border: 3px solid rgb(217, 176, 15); */
+                height: 19vh;
+                width: 260px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .reseñas{
+                /* border: 3px solid rgb(0, 0, 255); */
+                height: 44vh;
+
+                background-image: url(./reseñas.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            i{
+                font-size: 30px;
+            }
+            .contacto div, a{
+                font-size: 20px;
+                text-decoration: none;
+            }
+.containerDestino{
+    /* border: 3px solid black; */
+    height: 120vh;
+    background-color: rgba(141, 93, 6, 0.5);
+}
+    .tituloAmerica{
+        /* border: 3px solid rgb(193, 66, 66); */
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        
+    }
+    .textoAmerica{
+        /* border: 3px solid rgb(135, 227, 133); */
+        height: 80vh;
+    }
+        .block1{
+            /* border: 3px solid rgb(179, 76, 138); */
+            height: 25vh;
+            font-size: 20px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .block2{
+            /* border: 3px solid rgb(179, 76, 138); */
+            height: 70vh;
+
+            display: flex;
+        }
+            .texto1{
+                /* border: 3px solid rgb(179, 76, 138); */
+                width: 950px;
+                /* height: 60vh; */
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+            .texto2{
+                /* border: 3px solid rgb(179, 76, 138); */
+                width: 950px;
+                /* height: 60vh; */
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+            }            

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 3px solid red; */
+    height: 100vh;
+}
+.container1{
+    /* border: 3px solid rgb(9, 9, 9); */
+    background-color: white;
+    height: 10vh;
+    position: fixed;
+    top:0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+    .logotipo{
+        /* border: 3px solid rgb(219, 222, 56); */
+        width: 40%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:flex-end;  
+       
+    }
+    .menu{
+        /* border: 3px solid maroon; */
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .menu a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-decoration: none;
+        padding: 12px 10px;
+        display:block;
+    }
+    ul, ol{
+        list-style: none;
+    }
+    .menu li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    .menu li:hover > ul{
+        display: block;
+    }
+    .menu li a:hover{
+        background-color: rgb(199, 93, 27);
+    }
+    .container2{
+        /* border: 3px solid blueviolet; */
+        height: 100vh;
+
+        background-size: cover;
+        background-image: url(./quienesSomosAgencia.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;        
+    }
+    .container2{
+        /* border: 3px solid blueviolet; */
+        height: 100vh;
+
+        background-size: cover;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), 
+        url(./inicioAgencia.jpg) no-repeat center center fixed;
+        
+    }
+        .titulo{
+            /* border: 3px solid aquamarine; */
+            height: 55vh;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .titulo h4{
+            font-size: 60px;
+        }
+        .titulo p{
+            font-size: 40px;
+        }
+.subcontainer{
+    /* border: 3px solid yellow; */
+    height: 39vh;
+    margin-top: 5%;
+
+    display: flex;
+    justify-content:center;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .garantia{
+        /* border:3px solid white; */
+        width: 30%;
+        height: 60%;
+
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items:center;  
+    }
+    .atencion{
+        /* border:3px solid white; */
+        width: 30%;
+        height: 60%;
+
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items:center; 
+    }
+    .reservas{
+        /* border:3px solid white; */
+        width: 30%;
+        height: 60%;
+
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items:center; 
+    }
+    i{
+        color: white;
+        font-size: 50px;
+        margin: 20px
+    }
+    .subcontainer p{
+        color: white;
+        font-size: 15px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container3{
+        /* border:3px solid black; */
+        height: 100vh;
+    }
+    .textoPrincipal{
+        /* border:3px solid rgb(35, 138, 23); */
+        height: 30vh;
+        text-align: center;
+       
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center; 
+    }
+    .container4{
+        /* border:3px solid rgb(8, 81, 108); */
+        height: 70vh;
+
+        display: flex;
+    }
+    .texto2{
+        /* border:3px solid rgb(35, 138, 23); */
+        width: 50%;
+        height: 100%;
+        margin-right: 15px;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items:center; 
+    }
+    .texto3{
+        /* border:3px solid rgb(35, 138, 23); */
+        width: 50%;
+        height: 100%;
+        margin-left: 15px;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items:center;
+    }
+    .container3 p{
+        font-size: 25px;
+    }
+.container5{
+    /* border:3px solid yellow; */
+    height: 100vh;
+}
+    .sede{
+        /* border:3px solid rgb(134, 113, 209); */
+        height: 25vh;
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+    }
+    .container5 h6{
+        font-size: 30px;
+    }
+    .container5 p{
+        font-size: 20px;
+    }
+    .container6{
+        /* border:3px solid yellow; */
+        height: 75vh;
+
+        display: flex;
+
+    }
+        .imagenes{
+            /* border:3px solid rgb(165, 36, 120); */
+            width: 70%;
+            height: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+            .fotos{
+                /* border:3px solid rgb(210, 156, 191); */
+                width: 30%;
+                height: 50%;
+            }
+        .mapa{
+            /* border:3px solid rgb(8, 92, 10); */
+            width: 30%;
+            height: 100%;
+        } 
+
+
+
+
