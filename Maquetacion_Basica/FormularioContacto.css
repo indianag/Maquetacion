@@ -61,8 +61,8 @@
         background-color: rgb(199, 93, 27);
     }
 .contenido{
-    border: 3px solid red;
-    height: 110vh;
+    /* border: 3px solid red; */
+    height: 100vh;
 
     background-image: url(./formulario.jpg);
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@
     .enviar{
         /* border: 3px solid rgb(237, 237, 10); */
         height: 5vh;
-        background-color: rgb(244, 152, 5);
+        background-color: rgba(244, 152, 5, 0.243);
         font-family: Georgia, 'Times New Roman', Times;       
 
         display: flex;
@@ -148,6 +148,38 @@
         font-size: 20px;
     }
 
+    .filtro{
+        /* border: 2px solid red; */
+        width: 30vw;
+        height: 38vh;
+        background-color: rgba(255, 166, 0, 0.516);
+        
+    }
+        .tarjeta{
+            border: 1px solid rgb(5, 5, 5);
+            height: 8vh;
+            color: white;
+            font-size: 25px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        #resultado{
+            border: 1px solid rgb(5, 5, 5);
+            height: 30vh;
+            color: white;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+#resultado p{
+color:white;
+font-size: 30px;
 
 
-
+}
