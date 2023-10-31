@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FormularioContacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="logotipo">
+                <a href="./AgenciaDeViajes.html"><img src="./liveaboard-logo.svg"
+                    width="50%" alt="logo de la AgenciaDeViajes"/></a>           
+            </div>
+            <ul class="menu">
+                <li><a href="./SobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="">Destinos</a>
+                    <ul>
+                        <li><a href="./DestinoAmerica.html">America</a></li>
+                        <li><a href="./DestinoEuropa.html">Europa</a></li>
+                    </ul> 
+                </li>
+                <li><a href="./Soporte.html">Soporte 24/7</a></li>
+            </ul>
+        </div> 
+        <div class="contenido">
+            <div class="contenido1">
+                <div class="container2">
+                    <div class="titulo">
+                        <h1 style="color: white; font-size: 60px;">¿Dudas? Normal, habla
+                        </br>    
+                        con un experto.</h1>
+                    </div>
+                    <div class="subtitulo">
+                        <h3 style="color: white; font-size: 30px;">Déjanos tus datos y uno de nuestros asesores se pondrá en 
+                        </br>
+                        contacto contigo. Sin spam, sin compromiso.</h3>
+                    </div>
+                    <div class="input-group">
+                        <form id="contacto">
+                            <label for="nombre"></label>
+                            <input type="text" name="name" id="nombre" placeholder="Nombre">
+                            
+                            <label for="origen"></label>
+                            <input type="text" name="origen" id="origen" placeholder="Origen">
+
+                            <label for="destino"></label>
+                            <input type="destino" name="destino" id="destino" placeholder="Destino">
+
+                            <label for="personas"></label>
+                            <input type="personas" name="personas" id="personas" placeholder="Numero de personas">
+
+                            <label for="fecha"></label>
+                            <input type="fecha" name="fecha" id="fecha" placeholder="Fecha">
+                        </div>
+                        <div class="terminosYcondiciones">
+                            <p style="color: white; font-size: 15px;"> He leído y acepto la política de privacidad y las condiciones*</p>
+                            <p style="color: white; font-size: 15px;"> Leer la <a href="Politica de privacidad">Politica de privacidad</a> y las <a href="Condiciones legales">Condiciones legales</a></p>
+                        </div>
+                        <div class="enviar">
+                            <button type="button" id="solicitarBtn">Solicitar Informacion</button>
+                            <button type="button" id="filtrarBtn">Filtrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="resultados">
+
+        </div>
+    </div>
+    <script src="AgenciaDeViajes.js"></script>
+</body>
+</html>
+
+
+

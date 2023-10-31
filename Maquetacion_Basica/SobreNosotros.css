@@ -5,7 +5,7 @@
 }
 .container{
     /* border: 3px solid red; */
-    height: 110vh;
+    height: 100vh;
 }
 .container1{
     /* border: 3px solid rgb(9, 9, 9); */
@@ -61,8 +61,8 @@
         background-color: rgb(199, 93, 27);
     }
     .container2{
-        border: 3px solid blueviolet;
-        height: 110vh;
+        /* border: 3px solid blueviolet; */
+        height: 100vh;
 
         background-size: cover;
         background-image: url(./quienesSomosAgencia.jpg);
@@ -70,8 +70,8 @@
         background-repeat: no-repeat;        
     }
     .container2{
-        border: 3px solid blueviolet;
-        height: 110vh;
+        /* border: 3px solid blueviolet; */
+        height: 100vh;
 
         background-size: cover;
         background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), 
@@ -169,6 +169,7 @@
         /* border:3px solid rgb(35, 138, 23); */
         width: 50%;
         height: 100%;
+        margin-right: 15px;
 
         display: flex;
         justify-content: flex-start;
@@ -179,6 +180,7 @@
         /* border:3px solid rgb(35, 138, 23); */
         width: 50%;
         height: 100%;
+        margin-left: 15px;
 
         display: flex;
         justify-content: flex-start;

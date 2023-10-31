@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 .container{
-    border: 3px solid red;
-    height: 110vh;
+    /* border: 3px solid red; */
+    height: 100vh;
 }
 .container1{
-    border: 3px solid rgb(9, 9, 9);
+    /* border: 3px solid rgb(9, 9, 9); */
     background-color: white;
     height: 10vh;
     position: fixed;
@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
     .logotipo{
-        border: 3px solid rgb(219, 222, 56);
+        /* border: 3px solid rgb(219, 222, 56); */
         width: 40%;
         height: 100%;
 
@@ -30,7 +30,7 @@
        
     }
     .menu{
-        border: 3px solid maroon;
+        /* border: 3px solid maroon; */
         width: 60%;
         height: 100%;
 
@@ -61,7 +61,7 @@
         background-color: rgb(199, 93, 27);
     }
     .container2{
-        border: 3px solid blueviolet;
+        /* border: 3px solid blueviolet; */
         height: 110vh;
 
         background-size: cover;
@@ -70,7 +70,7 @@
         
     }
         .titulo{
-            border: 3px solid aquamarine;
+            /* border: 3px solid aquamarine; */
             height: 55vh;
             color: white;
 
@@ -86,7 +86,7 @@
             font-size: 25px;
         }
     .input-group{
-        border: 3px solid white;
+        /* border: 3px solid white; */
         height: 12vh;
         margin-top: 2%;
         text-decoration: none;
@@ -107,7 +107,7 @@
         background-color: rgb(223, 137, 9);
     }
 .subcontainer{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     height: 39vh;
 
     display: flex;
@@ -116,7 +116,7 @@
     align-items: center;
     }
     .garantia{
-        border:3px solid white;
+        /* border:3px solid white; */
         width: 30%;
         height: 60%;
 
@@ -126,7 +126,7 @@
         align-items:center;  
     }
     .atencion{
-        border:3px solid white;
+        /* border:3px solid white; */
         width: 30%;
         height: 60%;
 
@@ -136,7 +136,7 @@
         align-items:center; 
     }
     .reservas{
-        border:3px solid white;
+        /* border:3px solid white; */
         width: 30%;
         height: 60%;
 
