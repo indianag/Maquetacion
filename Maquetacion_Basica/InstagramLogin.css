@@ -257,3 +257,17 @@ input::placeholder{
     color: rgb(189, 185, 185);
     text-align: center;
 }
+
+
+@media screen and (max-width: 872px) {
+    .imagen{
+      
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .contenedor{
+    border: none;
+    }
+}
