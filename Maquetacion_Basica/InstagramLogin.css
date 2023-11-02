@@ -14,24 +14,26 @@
 .contenedorInstagram{
     /* border:3px solid red; */
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    column-gap: 20px;
 }
 .imagen{
     /* border: 2px solid rgb(0, 255, 166); */
-    width: 23vw;
-    height: 65vh;
+    /* width: 23vw; */
+    height: 700px;
 }
 .imagen img{
-    width: 400px;
+ 
+    height: 100%;
 }
 .contenedor1{
     /* border: 2px solid rgb(173, 223, 80); */
-    width: 23vw;
-    height: 70vh;
+    width: 400px;
+    height: 700px;
 
     display: flex;
     flex-direction: column;
@@ -41,27 +43,28 @@
 .contenedor1a{
     border: 1px solid  rgb(215, 215, 215);
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     padding: 0 50px 15px 50px;
 
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     
 }
 .logo{
     /* border:2px solid red; */
     width: 100%;
-    height: 20vh;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .logo img{
-    width: 200px;
-    height: 50px;
+    /* height: 50px; */
+    width: 70%;
 }
 .input-group{
     /* border: 2px solid hsl(124, 42%, 49%); */
@@ -71,6 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 80px;
     
 }
 input, button{
@@ -175,7 +179,7 @@ input::placeholder{
 }
 .descarga{
     /* border: 2px solid red; */
-    height: 8vh;
+    height: 12vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -225,14 +229,16 @@ input::placeholder{
     height: 5vh;
     display: flex;
     justify-content:center;
-    align-items: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .link a{
     padding: 10px;
-    color: rgb(189, 185, 185);;
+    color: rgb(119, 119, 119);
+    font-size: 10px;
 }
-.menu{
-    /* border: 1px solid rgb(162, 73, 152); */
+/* .menu{
+    border: 1px solid rgb(162, 73, 152);
     height: 5vh;
     padding: 10px;
 
@@ -256,18 +262,18 @@ input::placeholder{
 .version{
     color: rgb(189, 185, 185);
     text-align: center;
-}
+} */
 
 
-@media screen and (max-width: 872px) {
+@media screen and (max-width: 1000px) {
     .imagen{
       
         display: none;
     }
 }
 
-@media screen and (max-width: 450px){
-    .contenedor{
+@media screen and (max-width: 650px){
+    .contenedor1a{
 
     border: none;
     
