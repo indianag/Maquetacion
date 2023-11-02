@@ -266,8 +266,10 @@ input::placeholder{
     }
 }
 
-@media (max-width: 450px){
+@media screen and (max-width: 450px){
     .contenedor{
+
     border: none;
+    
     }
 }
