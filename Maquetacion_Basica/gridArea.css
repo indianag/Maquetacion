@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 3px solid black; */
+    display: grid;
+
+        grid-template-areas:
+        "header header imagen"
+        "naranja ladrillo ladrillo"
+        "footer footer footer";
+}
+.header{
+    grid-area: header;
+    height: 50px;
+
+    background-color: rgb(139, 21, 21);
+    color:white;
+    font-size: 10px;
+    text-align: center;
+}
+.imagen{
+    grid-area: imagen;
+    
+    background-color: rgb(65, 27, 7);
+    color:white;
+    font-size: 10px;
+    text-align: center;
+}
+.naranja{
+    grid-area: naranja;
+    background-color: rgb(215, 101, 20);
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    height: 300px;
+    padding: 10px;
+   gap: 125px;
+
+    display: grid;
+    grid-template-areas: 
+    "hijo1"
+    "hijo2";
+}
+    .hijo1{
+        grid-area: hijo1;
+        background-color: white;
+        color: rgb(215, 101, 20);
+
+    }
+    .hijo2{
+        grid-area: hijo2;
+        background-color: white;
+        color: rgb(215, 101, 20);
+    }
+.ladrillo{
+    grid-area: ladrillo;
+    background-color: rgb(197, 74, 7);
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+
+    display: grid;
+    grid-template-areas: 
+    "hijoA"
+    "hijoB";
+}
+    .hijoA{
+        grid-area: hijoA;
+        border:1px solid white;
+        color:white;
+    }
+    .hijoB{
+        grid-area: hijoB;
+        border:1px solid white;
+        color:white;
+    }
+.footer{
+    grid-area: footer;
+    background-color: rgb(85, 24, 10);
+    color:white;
+    font-size:10px;
+    text-align: center;
+    height: 50px;
+}

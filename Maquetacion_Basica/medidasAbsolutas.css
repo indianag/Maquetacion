@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    
+}
+.a{
+    background-color: rgb(169, 218, 130);
+    color: white;
+    font-size:small;
+    text-align: center;
+}
+.b{
+    background-color: rgb(240, 170, 40);
+    color: white;
+    font-size: small;
+    text-align: center; 
+}
+.c{
+    background-color: rgb(233, 118, 24);
+    color: white;
+    font-size: small;
+    text-align: center; 
+}
+.d{
+    background-color: rgb(194, 38, 38);
+    color: white;
+    font-size: small;
+    text-align: center; 
+}
+.e{
+    background-color: rgb(39, 35, 248);
+    color: white;
+    font-size: small;
+    text-align: center; 
+}
+.f{
+    background-color: rgb(240, 230, 90);
+    color: white;
+    font-size: small;
+    text-align: center; 
+}
+
+

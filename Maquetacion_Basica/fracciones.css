@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.container1{
+    display: grid;
+    grid-template-columns: 40% 20% 40% ;
+    grid-template-rows: 1fr 0.5fr;
+    
+}
+    .a{
+        background-color: rgb(171, 255, 103);
+        color: black;
+        font-size:small;
+        text-align: center;
+    }
+    .b{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-size: small;
+        text-align: center; 
+    }
+    .c{
+        background-color:  rgb(171, 255, 103);
+        color: black;
+        font-size: small;
+        text-align: center; 
+    }
+    .d{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-size: small;
+        text-align: center; 
+    }
+    .e{
+        background-color:  rgb(171, 255, 103);
+        color: black;
+        font-size: small;
+        text-align: center; 
+    }
+    .f{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-size: small;
+        text-align: center; 
+    }
+    .container2{
+        display: grid;
+        grid-template-columns: 40% 20% 40% ;
+        grid-template-rows: 1fr 0.5fr;
+        
+    }
+    .a2{
+        background-color: rgb(171, 255, 103);
+        color: black;
+        font-size:small;
+        text-align: center;
+    }
+    .b2{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-size: small;
+        text-align: center; 
+    }
+    .c2{
+        background-color:  rgb(171, 255, 103);
+        color: black;
+        font-size: small;
+        text-align: center; 
+    }
+    .d2{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-size: small;
+        text-align: center; 
+    }
+    .e2{
+        background-color:  rgb(171, 255, 103);
+        color: black;
+        font-size: small;
+        text-align: center; 
+    }
+    .f2{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-size: small;
+        text-align: center; 
+    }

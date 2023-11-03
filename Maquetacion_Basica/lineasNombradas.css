@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 3px solid red; */
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: [x0]4fr [x1]1.5fr [x2];
+    grid-template-rows: [y0]1fr [y1]4fr [y2]0.5fr [y3];
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-size:xx-large; 
+    text-align: center;
+
+    display: grid;
+    grid-column: x0/x2;
+    grid-row: y0/y1;
+}
+.azul{
+    background-color: blue;
+    gap: 10px;
+    padding: 15px;
+
+    display: grid;
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+
+    display: grid;
+    grid-template-columns: [x0]4fr [x1]1fr [x2];
+    grid-template-rows: [y0]2fr [y1]4fr [y2];
+
+}
+    .a{
+        border:1px solid white;
+        color: white;
+        font-size:xx-large; 
+
+        display: grid;
+        grid-column: x0/x2;
+        grid-row: y0/y1;
+    }
+    .textos{
+        display: grid;
+        grid-column: x0/x2;
+        grid-row: y1/y2;
+        gap: 5px;
+
+        display: grid;
+        grid-template-columns: [x0]4fr [x1]1fr [x2];
+        grid-template-rows: [y0]2fr [y1];
+
+    }
+        .b{
+            border:1px solid white;
+            color: white;
+            font-size:small; 
+        }
+        .c{
+            border:1px solid white;
+            color: white;
+            font-size:small; 
+        }
+.verde{
+    background-color: rgb(55, 219, 206);
+    gap: 10px;
+    padding: 5px;
+
+    display: grid;
+    grid-column: x1/x2;
+    grid-row: y1/y2;
+}
+    .menu{
+        border: 1px solid black;
+        color: white;
+        font-size:xx-large;
+        text-align: center;
+    }
+    .menu1{
+        background-color: black;
+        color: white;
+        font-size:10px; 
+        text-align: center;
+    }
+    .menu2{
+        background-color: black;
+        color: white;
+        font-size:10px; 
+        text-align: center;
+    }
+    .menu3{
+        background-color: black;
+        color: white;
+        font-size:10px; 
+        text-align: center;
+    }
+.morado{
+    background-color: blueviolet;
+    padding: 5px;
+    gap: 5px;
+
+    display: grid;
+    grid-column: x0/x2;
+    grid-row: y2/y3;
+
+    display: grid;
+    grid-template-columns: [x0]5fr [x1]5fr [x2];
+    grid-template-rows: [y0]1fr [y1];
+
+}
+    .footer{
+        border: 1px solid black;
+        color: white;
+        font-size:small;
+        text-align: center;
+    }
+    .contacto{
+        border: 1px solid black;
+        color: white;
+        font-size:small;
+        text-align: center;
+    }
