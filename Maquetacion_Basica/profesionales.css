@@ -87,27 +87,25 @@
 }
 .titulo{
     /* border: 3px solid red; */
-    height: 8vh;
-    font-size: 100px;
+    height: 10vh;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     text-align: center;
     color: white;
-    max-width: 100%;
-    }
+}
     .contenedor2{
-        /* border: 3px solid rgb(78, 7, 7); */
-        height: 92vh;
+        /* border: 10px solid rgb(78, 7, 7); */
+        height: 90vh;
 
         display: flex;
         flex-wrap: wrap;
-        gap: 100px;
+       gap: 2%;
+      
     }
         .Caja{
             /* border: 3px solid rgb(197, 191, 14); */
             background: linear-gradient(30deg, RED,black, white);
-            height: 1500px;
-            width: 1400px;
+            height: 49%;
+            width: 18%;
 
         }
             .imagen{
@@ -121,35 +119,31 @@
                 /* border: 3px solid rgb(87, 150, 45); */
                 background-color: white;
                 height: 20%;
-                /* margin-left: 20%; */
                 text-align: center;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
             
             }
             .Caja a{
                 
-                font-size: 30px;
+                font-size: 100%;
                 color: rgb(134, 29, 24);
                 text-decoration: none;
                 font-weight: 600;
             }
             .Caja p{
-                font-size: 40px;
+                font-size: 100%;
                 font-weight: 800;
             }
             .Caja h3{
-                font-size: 30px;
+                font-size: 100%;
                 font-weight: 500;
             }
 img{
     height: 90%;
     width: 70%;
 }
-            
-@media screen and (max-width: 1000px) {
+  
+ 
+ @media screen and (max-width: 1000px) {
     .imagen{
       
         display: flex;
@@ -157,6 +151,24 @@ img{
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .info{
+      
+        display: block;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .titulo{
+      
+        font-size: auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Caja{
+      
+        display: block;
+    }
+}
 @media screen and (max-width: 750px){
     .pagPrincipal{
         background-color: white;
@@ -166,12 +178,13 @@ img{
 @media screen and (max-width: 750px){
     .titulo{
         color: rgb(1, 1, 1);
+        display: block;
      
     }
 }
 @media screen and (max-width: 750px){
     .barra svg{
-        color: rgb(0, 0, 0);
+        color: rgb(1, 1, 1);
      
     }
 }
