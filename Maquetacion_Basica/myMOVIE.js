@@ -40,11 +40,11 @@ class Movie {
 function guardarInformacion(){
     
     const peliculas =[];
-    const movieForm = document.getElementById('movieConta');
+    const movieForm = document.getElementById("movieConta");
 
         const title = document.getElementById("title").value;
         const releaseYear = document.getElementById("releaseYear").value;
-        const actors = document.getElementById("actors").value;
+        const actorsInput = document.getElementById("actors").value;
         const nacionality = document.getElementById("nacionality").value;
         const director = document.getElementById("director").value;
         const writer = document.getElementById("writer").value;
@@ -57,6 +57,7 @@ function guardarInformacion(){
         const genre = document.getElementById("genre").value;
         const photo = document.getElementById("photo").value;
 
+        const actors = actorsInput.split("","").map(actor=> actor.trim());
 
         const newMovie = new Movie(title, releaseYear, actors, nacionality, director, writer, language, plataforma, isMCU, mainCharacterName, producer, distribuidor, genre, photo);
         
@@ -76,6 +77,7 @@ function guardarInformacion(){
         document.getElementById("distribuidor").value="";
         document.getElementById("genre").value="";
         document.getElementById("photo").value="";
+        console.log(newMovie);
 };
 document.getElementById("solicitarBtn").addEventListener("click",guardarInformacion);    
 
@@ -88,12 +90,12 @@ document.getElementById("solicitarBtn").addEventListener("click",guardarInformac
 
 function mostrarPelicula(){
 
-    const newMovie = new Movie(title, releaseYear, [], nacionality, director, writer, language, plataforma, isMCU, mainCharacterName, producer, distribuidor, genre, photo);
-        const movieList = document.getElementById('movie-lista');
-        const movieItem = document.createElement('li');
+    const newMovie = new Movie(title, releaseYear, actors, nacionality, director, writer, language, plataforma, isMCU, mainCharacterName, producer, distribuidor, genre, photo);
+        const movieList = document.getElementById(`movie-lista`);
+        const movieItem = document.createElement(`li`);
         movieItem.innerHTML = `<h1> ${newMovie.title}</h1>
       <p>${newMovie.releaseYear}
-        ${newMovie.actors.join(',')}
+        ${newMovie.actors}
         ${newMovie.nacionality}
         ${newMovie.director}
         ${newMovie.writer}
@@ -104,8 +106,7 @@ function mostrarPelicula(){
         ${newMovie.producer}
         ${newMovie.distribuidor}
         ${newMovie.genre}</p>
-        <img src="${newMovie.photo}" alt="poster de la pelicula">
-        `;
+        <img src="${newMovie.photo}" alt="poster de la pelicula">`;
 
         movieList.appendChild(movieItem);
     };
