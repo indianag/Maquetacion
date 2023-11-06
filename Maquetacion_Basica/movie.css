@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pagPrincipal{
+    /* border: 2px solid red; */
+    height: 200vh;
+    width: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+.barra{
+    /* border: 3px solid greenyellow; */
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 10%;
+    height: 9%;
+
+    position: fixed;
+
+    transition: .5s all;
+
+    z-index: 1;
+}
+
+.barra ul{
+    padding: 0px;
+    text-align: center;
+}
+.barra li{
+    transition: .3s all;
+}
+.barra a{
+    text-decoration: none;
+    list-style: none;
+
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.barra h2{
+    text-align: center;
+    color: white;
+    padding: 7px;
+    padding-bottom: 7px;
+
+    font-size:0px;
+}
+.barra svg{
+    padding-top: 30px;
+    padding-left: 10px;
+    color: white;
+}
+
+.barra:hover{
+    width: 70%;
+    height: 100%;
+
+    background-color: rgba(5, 33, 51, 0.98);
+}
+.barra:hover h2{
+    padding: 15px;
+    font-size: 35px;
+}
+.barra:hover a{
+    font-size: 20px;
+    color: white;
+
+    display:block;
+    padding: 20px;
+}
+.barra:hover svg{
+    height: 0px;
+}
+.barra:hover li{
+    border-top: 1px solid black;
+    width: 100%;
+}
+ .barra:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+.barra:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;/*30 0 30 0*/;
+    
+    background-color: rgba(22,78,112,0.98);
+}
+
+.principal{
+    /* border: 2px solid rgb(29, 5, 5); */
+    width: 100%;
+    height: 173vh; 
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.movies{
+    /* border: 2px solid yellow; */
+    height: 30vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.movies h1{
+    width: 100%;
+    color:rgb(0, 0, 0);
+    background:linear-gradient(45deg, #921414, orange, violet);
+    font-size: 90px;
+    text-align: center;
+
+}
+.peliculas{
+    /* border: 2px solid red; */
+    height: 143vh;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.cinta{
+    /* border: 5px solid blueviolet; */
+    height: 100vh;
+    width: 100%;
+    
+
+    background-image: url(https://th.bing.com/th/id/R.830cfa73e8ae3db2896552165cc21d01?rik=bya49Rh86MIFXQ&riu=http%3a%2f%2fwww.francetvinfo.fr%2fimage%2f759sphvzj-d995%2f1500%2f843%2f10752825.jpg&ehk=HAcy61V4pVqS36CjBxQQyNeB6Njh1G8SILdkI66gEQE%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.formulario{
+    /* border: yellow solid 10px; */
+    height: 100vh;
+    width: 100%;
+
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+form{
+    /* border: 3px solid greenyellow; */
+    height: 100vh;
+    width: 32%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+.formulario input{
+    /* width: 400px;
+    height: 60px; */
+    padding: 0 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    
+    
+
+}
+
+ label{ 
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(-145%);
+    color: white;
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+    position: relative;
+    
+
+}
+input:focus ~ label{
+    top: -3%;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+   
+}
+ 
+input::placeholder{
+    color:black;
+}
+.enviar{
+    /* border: 3px solid rgb(237, 237, 10); */
+    height: 5vh;
+    background-color: #cf0e0e84;
+          
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    background: none;
+    border: none;
+    text-decoration: none;
+    /* padding-left: 150px; */
+    color: white;
+    font-size: 20px;
+
+}
+.texto{
+    /* border: 2px solid blue; */
+    width: 500px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 100px;
+    color: white;
+}
+ .nuevaPeli{
+    /* border: 2px solid white; */
+    width: 500px;
+    height: 100vh;
+    margin-left: 100px;
+    
+}
+   .tarjeta{
+        /* border: 1px solid rgb(5, 5, 5); */
+        height: 20vh;
+        color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.253);
+        font-size: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    #movie-lista{
+        /* border: 1px solid rgb(5, 5, 5); */
+        background-color: #cf0e0e84;
+        height: 80vh;
+        color: white;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: 1050px) {
+        div{
+            display: flex;
+           flex-wrap: wrap;
+        }
+    }
+    
+    @media screen and (max-width: 750px){
+        .pagPrincipal{
+            background-color: white;
+         
+        }
+    }
+    @media screen and (max-width: 1050px) {
+        .formulario{
+          
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+    }
+    @media screen and (max-width: 750px) {
+        .formulario{
+          
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+    }
+    
+    @media screen and (max-width: 750px){
+        .texto{
+            display: none;
+         
+        }
+    }
+    @media screen and (max-width: 1050px){
+        .nuevaPeli{
+            width: 100%;
+            height: 100%;
+         
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+/* #resultado p{
+color:white;
+font-size: 30px;
+}
+
+#resultado div {
+border: solid red 2px;
+background-color: rgba(236, 139, 12, 0.523);
+width: 200px;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+} */
