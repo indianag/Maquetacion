@@ -33,10 +33,87 @@ class Movie {
     }
 };
 
-function mostrarImagen(){
-    let url = $("#photo").val()
-    $("#fotoDePeli").attr("src", url).show(1000)
-}
+
+        const title = document.getElementById("title");
+        const releaseYear = document.getElementById("releaseYear");
+        const actorsInput = document.getElementById("actors");
+        const nacionality = document.getElementById("nacionality");
+        const director = document.getElementById("director");
+        const writer = document.getElementById("writer");
+        const language = document.getElementById("language");
+        const plataforma = document.getElementById("plataforma");
+        const isMCU = document.getElementById("isMCU");
+        const mainCharacterName = document.getElementById("mainCharacterName");
+        const producer = document.getElementById("producer");
+        const distribuidor = document.getElementById("distribuidor");
+        const genre = document.getElementById("genre")
+        const mostrarBoton = document.getElementById("añadirInfo")
+        const infoMostrada = document.getElementById("informacion");
+
+        mostrarBoton.addEventListener("click", () => {
+            const info1 = title.value;
+            const info2 = releaseYear.value;
+            const info3 = actors.value;
+            const info4 = nacionality.value;
+            const info5 = director.value;
+            const info6 = writer.value;
+            const info7 = language.value;
+            const info8 = plataforma.value;
+            const info9 = isMCU.value;
+            const info10 = mainCharacterName.value;
+            const info11 = producer.value;
+            const info12 = distribuidor.value;
+            const info13 = genre.value;
+        
+            const informacionMostrada = `title: ${info1},
+            releaseYear: ${info2}
+            actors: ${info3}
+            nacionality: ${info4}
+            director: ${info5}
+            writer: ${info6}
+            language: ${info7}
+            plataforma: ${info8}
+            is MCU: ${info9}
+            main Character Name: ${info10}
+            producer: ${info11}
+            distribuidor: ${info12}
+            genre: ${info13}`
+
+            informacion.textContent = informacionMostrada;
+            
+
+            title.value = "";
+            releaseYear.value = "";
+            actors.value = "";
+            nacionality.value = "";
+            director.value = "";
+            writer.value = "";
+            language.value = "";
+            plataforma.value = "";
+            isMCU.value = "";
+            mainCharacterName.value = "";
+            producer.value = "";
+            distribuidor.value = "";
+            genre.value = "";
+        })
+
+
+
+
+
+
+
+
+const inputURL = document.getElementById("photo");
+const imagenMostrada = document.getElementById("fotoDePeli");
+inputURL.addEventListener("change", () => {
+    const imagenUrl = inputURL.value;
+    imagenMostrada.src = imagenUrl;
+    imagenMostrada.style.display="block";
+})
+
+
+
 
 
 
