@@ -48,6 +48,17 @@ mostrarBoton.addEventListener("click", () => {
 });
 
 
+const infoInputs = document.querySelectorAll(".info-input");
+const mostrarBtn = document.getElementById("añadirInfo");
+const informacionMostrada = document.getElementById(informacion);
+
+mostrarBtn.addEventListener("click", () => {
+    const arrInfo = Array.from(infoInputs).map(input => input.value);
+    const informacion = arrInfo.join("","");
+    informacionMostrada.textContent=`Mis datos: ${informacion}`;
+    infoInputs.forEach(input => (input.value = "" ));
+});
+
 
 
 
