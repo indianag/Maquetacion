@@ -48,12 +48,13 @@ jQuery(() => {
 })
 
 function actualizarCarrito(){
-    $("#lista-carrito").empty();
+    $("#lista-compras").empty();
+    console.log(carrito)
     let total = 0;
 
     carrito.forEach(function(item) {
         const card = `<li>PRENDA: ${item.tipo} - $${item.precio}</li>`;
-       $("#lista-compras").prepend(card);
+       $("#lista-compras").append(card);
         total += item.precio;
     });
     $(".modal-footer").text("TOTAL DE COMPRAS:  $" + total);
