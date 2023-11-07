@@ -1,4 +1,4 @@
-export class Professional {
+ class Professional {
     constructor(name, age, weight, height, isRetired, nationality, oscarsNumber, profession, photo) {
         this.name = name;
         this.age = age;
@@ -22,3 +22,16 @@ export class Professional {
         return newTostring;
     }
 }
+
+
+function insertarImagen(){
+    let url = document.getElementById("photo2").value
+    document.getElementById("profesional1").src =url
+    document.getElementById("info1").style.display="block"
+}
+
+// function insertarImagen(){
+//     let url =$("#profesional1").attr("src",url).show(1000)
+// }
+
+

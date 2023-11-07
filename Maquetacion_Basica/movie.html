@@ -5,33 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./movie.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
   </head>
   <body>
+
     <div class="pagPrincipal">
         <div class="barra">
            <h2>MENU</h2><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-
+            </svg>
           <ul>
             <li><a href="./App.IMDB.html">INICIO</a></li>
             <li><a href="./movie.html">PELICULAS</a></li>
             <li><a href="./profesionales.html">PROFESIONALES</a></li>
             <li><a href="./formulario.movie.html">NUEVA PELICULA!</a></li>
           </ul>
-           
-        </div>
-        <div class="principal">
-            <div class="movies"> 
-                <h1>M O V I E </h1>
-            </div>
- 
+        </div> 
 
-    
+
+        <div class="movies"> 
+            <h1>M O V I E </h1>
+        </div>
+        <div id="nuevaPeli" class="peli">
+          <div class="datos">
+          <p id="informacion" cla>AQUI MI INFORMACION DE LA PELI</p>
+          </div>
+          <div class="portadaPeli">AQUI MI IMAGEN DE LA PELI
+            <img id="fotoDePeli" scr="">
+          </div>
+        </div>
+    </div> 
+
+    <div class="input-group">
+      <form id="movieConta">
+        <input type="text" name="title" id="title" placeholder="Titulo">
+        <label for="title"></label>
+
+        <input type="text" name="releaseYear" id="releaseYear" placeholder="Año de lanzamiento">
+        <label for="releaseYear"></label>
+        
+        <input type="text" name="actors" id="actors" placeholder="Actor">
+        <label for="actors"></label>
+        
+        <input type="text" name="nacionality" id="nacionality" placeholder="Nacionalidad">
+        <label for="nacionality"></label>
+        
+        <input type="text" name="director" id="director" placeholder="Director">
+        <label for="director"></label>
+        
+        <input type="text" name="writer" id="writer" placeholder="Escritor">
+        <label for="writer"></label>
+        
+        <input type="text" name="language" id="language" placeholder="Lenguaje">
+        <label for="language"></label>
+        
+        <input type="text" name="plataforma" id="plataforma" placeholder="Plataforma">
+        <label for="plataforma"></label>
+        
+        <input type="text" name="isMCU" id="isMCU" placeholder="isMCU">
+        <label for="isMCU"></label>
+        
+        <input type="text" name="mainCharacterName" id="mainCharacterName" placeholder="Nombre del personaje principal">
+        <label for="mainCharacterName"></label>
+        
+        <input type="text" name="producer" id="producer" placeholder="Productor">
+        <label for="producer"></label>
+        
+        <input type="text" name="distribuidor" id="distribuidor" placeholder="Distribuidor">
+        <label for="distribuidor"></label>
+        
+        <input type="text" name="genre" id="genre" placeholder="Género">
+        <label for="genre"></label>
+        
+        <input type="text" name="photo" id="photo" placeholder="URL de la imagen">
+        <label for="photo"></label>
+
+        <div class="enviar">
+            <button type="button" id="añadirInfo">Añadir nueva pelicula</button>
+            <button type="button" id="mostrarFoto" onclick="mostrarImagen()">Mostrar</button>
+        </div>
+    </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src = "myMOVIE.js"></script>
-    
+    <script src = "./myMOVIE.js"></script>
 </body>
 </html>

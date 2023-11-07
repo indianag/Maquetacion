@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./profesionales.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
   </head>
@@ -18,14 +19,14 @@
             <li><a href="./App.IMDB.html">INICIO</a></li>
             <li><a href="./movie.html">PELICULAS</a></li>
             <li><a href="./profesionales.html">PROFESIONALES</a></li>
-            <li><a href="./movie.html">NUEVA PELICULA!</a></li>
+            <li><a href="./formulario.movie.html">NUEVA PELICULA!</a></li>
           </ul>
         </div>
           <div class="titulo" ><h1>C E L E B R I D A D E S</h1></div>
             <div class="contenedor2">
-                <div class="Caja">
+                <div id="info1"class="Caja" style="display: block;">
                     <div class="imagen">
-                        <img src="https://1.bp.blogspot.com/-XscNgQHkp3g/XxqIh4EQpgI/AAAAAAAAAp8/_Tp5c_7Sfig68UN22drwqaGZEuji7Au8wCNcBGAsYHQ/s2048/Johnny%2BDepp.jpg" alt="">
+                        <img id="profesional1" src="" alt="">
                     </div>
                     <div style="color: black" class="info">
                         <p>ACTOR DE CINE</p>
@@ -37,7 +38,7 @@
                     <div class="imagen">
                         <img src="https://www.okchicas.com/wp-content/uploads/2021/02/17-De-los-actores-mas-guapos-en-la-historia-de-Hollywood-9.jpg" alt="">
                     </div>
-                    <div class="info">
+                    <div class="info"> 
                       <p>ACTOR DE CINE</p>
                       <h3>JUDE LAW</h3>
                       <a href="./movie.html">Movie</a>
@@ -125,6 +126,43 @@
              </div>
       </div>
     </div>
+    <div class="">
+      <form id="profesional-tainer">
+        <input type="text" name="name" id="name" placeholder="Nombre">
+        <label for="name">Nombre</label>
+
+        <input type="text" name="age" id="age" placeholder="Edad">
+        <label for="age">Eda</label>
+        
+        <input type="text" name="weight" id="weight" placeholder="Peso">
+        <label for="weight">Peso</label>
+        
+        <input type="text" name="height" id="height" placeholder="Altura">
+        <label for="height">Altura</label>
+        
+        <input type="text" name="isRetired" id="isRetired" placeholder="Esta retirado?">
+        <label for="isRetired">Esta retirado?</label>
+        
+        <input type="text" name="nationality" id="nationality" placeholder="Nacionalidad">
+        <label for="nationality">Nacionalidad</label>
+        
+        <input type="text" name="oscarsNumber" id="oscarsNumber" placeholder="Número de los oscares">
+        <label for="oscarsNumber">Número de los oscares</label>
+        
+        <input type="text" name="profession" id="profession" placeholder="Profesion">
+        <label for="profession">Profesion</label>
+        
+        <input type="text" name="photo2" id="photo2" placeholder="URL de la imagen">
+        <label for="photo2">URL de la imagen</label>
+   
+        <div class="enviar">
+            <button type="button" id="mostrarFoto" onclick="insertarImagen()">Mostrar</button>
+            <!-- <button type="button" id=""></button> -->
+        </div>
+    </form>
+
+    </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="./myPROFESSIONAL.js"></script>
 </body>
 </html> 
