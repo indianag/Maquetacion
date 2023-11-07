@@ -1,162 +1,60 @@
-$(document).ready(function(){
-    const carrito = [];
+let pantalonSuelto = {tipo: "Pantalon suelto gris", precio: 20}
+let vestidoTunico = {tipo: "Vestido Túnico", precio: 18}
+let faldaMid = {tipo: "Falda Mid Print", precio: 12}
+let cardigaLargo = {tipo: "Cardigan Largo Rayas", precio: 22}
+let faldaMini = {tipo: "Falda Mini Zebra", precio: 12}
+let mono = {tipo: "Mono Overol", precio: 15}
+let VestidoJersey = {tipo: "Vestido Jersey", precio: 30}
+let pantalonAncho = {tipo: "Pantalon Ancho", precio: 10}
 
-    $(".btn").click(function() {
-        const prenda = $(this).closest(".card-body");
-            const nombre = prenda.find("h5").text();
-            const precio = parseFloat(prenda.find(".card-precio").text().replace("precio: $",""));
+let carrito = [];
 
-            carrito.push({nombre, precio});
-
-            actualizarCarrito();
-    });
-
-    $("#mostrar-carrito").click(function(){
-        $(".modal").css("display", "block");
-    });
-    $(".btn-close").click(function(){
-        $(".modal").css("display", "none");
-    });
-
-    function actualizarCarrito(){
-        $("#lista-carrito").empty();
-        let total = 0;
-
-        carrito.forEach(prenda => {
-            const item = `<li>${prenda.nombre} - $${prenda.precio}</li>`;
-            $("#lista-carrito").append(item);
-            total += prenda.precio;
-        });
-        $(".modal-footer").text("$" + total);
-    };
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// jQuery(() => {
-//     $(".btn").on("click", () => {
-//         $(".card-body").prepend()
-//         const prenda = $(this).closest(".card-body");
-//         const nombre = prenda.find("card-title").text();
-//         const precio = parseFloat(prenda.find(".card-precio").text().replace("precio: $",""));
-
-//         const item =`<li>${nombre} - $${precio}</li>`;
-//         $("#lista-carrito").append(item);
-//     });
-//     $(".modal-body").click(function(){
-//         alert($(".modal"));
-//     });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const carritos = [];
-
-// document.querySelectorAll(`.btn`).forEach((boton) => 
-// boton.addEventListener("click", (event) =>{
-//     const prenda = event.target.closest(".card-body");
-//     const nombre = card-body.dataset.nombre;
-//     const precio = parseFloat(card-body.dataset.precio);
+jQuery(() => {
+    $("#añadir1").on("click",() =>{
+        carrito.push(pantalonSuelto);
+        actualizarCarrito();
+         
+    })
+    $("#añadir2").on("click",() =>{
+        carrito.push(vestidoTunico);
+        actualizarCarrito();
+    })
+    $("#añadir3").on("click",() =>{
+        carrito.push(faldaMid);
+        actualizarCarrito();
+    })
+    $("#añadir4").on("click",() =>{
+        carrito.push(cardigaLargo);
+        actualizarCarrito();
+    })
+    $("#añadir5").on("click",() =>{
+        carrito.push(faldaMini);
+        actualizarCarrito();
+    })
+    $("#añadir6").on("click",() =>{
+        carrito.push(mono);
+        actualizarCarrito();
+    })
+    $("#añadir7").on("click",() =>{
+        carrito.push(VestidoJersey);
+        actualizarCarrito();
+    })
+    $("#añadir8").on("click",() =>{
+        carrito.push(pantalonAncho);
+        actualizarCarrito();
+    })
     
-//     carritos.push({nombre, precio});
 
-//     actualizarCarrito();
-//     console.log(actualizarCarrito
-//         ())
-// })); 
+})
 
-// function actualizarCarrito(){
-//     const carritoElement = document.getElementById("carritos");
-//         let total = 0;
-//         let carritoHtml = `<ul>`;
+function actualizarCarrito(){
+    $("#lista-carrito").empty();
+    let total = 0;
 
-//     carritos.forEach((prenda) => {
-//         carritoHtml += `"<li>${prenda.nombre}: $${prenda.precio}</li>`;
-//             total += prenda.precio;
-//     });
-//     carritoHtml += `</ul> ${total}`;
-
-//     carritoElement.innerHTML = carritoHtml;
-// }
-
-
-
-
-
-
-
-
-
-
-// function guardarInformacion(){
-//     const nombre= document.getElementById("nombre").value;
-//     const origen= document.getElementById("origen").value;
-//     const destino= document.getElementById("destino").value;
-//     const numeroDePersonas= document.getElementById("numeroPersonas").value;
-//     const fecha= document.getElementById("fecha").value;
-
-//     const newCarrito = {
-//         nombre: nombre,
-//         origen: origen,
-//         destino: destino,
-//         numeroPersonas: numeroDePersonas,
-//         fecha: fecha,
-//     };
-//     personas.push(newcarrito);
-
-//     document.getElementById("nombre").value = "";
-//     document.getElementById("origen").value = "";
-//     document.getElementById("destino").value = "";
-//     document.getElementById("numeroPersonas").value = "";
-//     document.getElementById("fecha").value = "";
-// }
-
-// document.getElementById("solicitarBtn").addEventListener("click",guardarInformacion);
-
+    carrito.forEach(function(item) {
+        const card = `<li>PRENDA: ${item.tipo} - $${item.precio}</li>`;
+       $("#lista-compras").prepend(card);
+        total += item.precio;
+    });
+    $(".modal-footer").text("TOTAL DE COMPRAS:  $" + total);
+};
