@@ -111,6 +111,15 @@
     gap: 30px;
 
 }
+    .relleno1{
+        /* border: 3px solid red; */
+        height: 60vh;
+        width: 35%;
+    }
+    .relleno1 img{
+        width: 100%;
+        height: 80%;
+    }
     .datos{
         /* border: 3px solid rgb(55, 255, 0); */
         height: 60vh;
@@ -121,11 +130,12 @@
         justify-content: center;
     }
     .portadaPeli{
-        /* border: 3px solid red; */
+        /* border: 3px solid rgb(55, 255, 0); */
         height: 60vh;
         width: 35%;
         color: white;
     }
+   
 .input-group{
     /* border: 3px solid red; */
     height: 10vh;

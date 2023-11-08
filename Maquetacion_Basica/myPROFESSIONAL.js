@@ -22,176 +22,72 @@
         return newTostring;
     }
 }
+        const nombre = document.getElementById("name");
+        const edad = document.getElementById("age");
+        const peso = document.getElementById("weight");
+        const altura = document.getElementById("height");
+        const retired = document.getElementById("isRetired");
+        const nacionalidad = document.getElementById("nationality");
+        const oscares = document.getElementById("oscarsNumber");
+        const profesion = document.getElementById("profession");
 
-const urlInput = document.getElementById("photo2");
+        const mostrarBtn = document.getElementById("añadirInfo")
+        const infoMostrada = document.getElementById("informacion");
+       
+
+        mostrarBtn.addEventListener("click", () => {
+            const info1 = nombre.value;
+            const info2 = edad.value;
+            const info3 = peso.value;
+            const info4 = altura.value;
+            const info5 = retired.value;
+            const info6 = nacionalidad.value;
+            const info7 = oscares.value;
+            const info8 = profesion.value;
+     
+            const informacionMostrada = `Nombre: ${info1},
+            Edad: ${info2},
+            Peso: ${info3},
+            Altura: ${info4},
+            Esta retirado: ${info5},
+            Nacionalidad: ${info6},
+            Numero de Oscares: ${info7},
+            Profesion: ${info8}`
+
+            informacion.textContent = informacionMostrada;
+            
+
+            title.value = "";
+            releaseYear.value = "";
+            actors.value = "";
+            nacionality.value = "";
+            director.value = "";
+            writer.value = "";
+            language.value = "";
+            plataforma.value = "";
+            isMCU.value = "";
+            mainCharacterName.value = "";
+            producer.value = "";
+            distribuidor.value = "";
+            genre.value = "";
+        })
+
+const inputURL = document.getElementById("photo2");
 const mostrarBoton = document.getElementById("mostrarFoto");
-const profesional1 = document.getElementById("imagen1");
-const profesional2 = document.getElementById("imagen2");
-const profesional3 = document.getElementById("imagen3");
-let alternarImagen = false;
+const imagenMostrada = document.getElementById("imagen1");
+const imagenes = [];
 
 mostrarBoton.addEventListener("click", () => {
-    const imagenUrl = urlInput.value;
+    const imagenUrl = inputURL.value;
 
-    if(alternarImagen){
+    imagenes.push(imagenUrl);
 
-    
-    profesional1.src = imagenUrl;
-    profesional2.src = "";
-    } else {
-        profesional2.src = imagenUrl;
-        profesional1.src = "";
+    if (imagenes.length > 0){
+        imagenMostrada.src = imagenes[0];
     }
-    alternarImagen = !alternarImagen;
-    
-    urlInput.value = "";
+
+    inputURL.value = "";
+
 });
-
-
-const infoInputs = document.querySelectorAll(".info-input");
-const mostrarBtn = document.getElementById("añadirInfo");
-const informacionMostrada = document.getElementById(informacion);
-
-mostrarBtn.addEventListener("click", () => {
-    const arrInfo = Array.from(infoInputs).map(input => input.value);
-    const informacion = arrInfo.join("","");
-    informacionMostrada.textContent=`Mis datos: ${informacion}`;
-    infoInputs.forEach(input => (input.value = "" ));
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const urlInput = document.getElementById("photo2");
-// const mostrarBoton = document.getElementById("mostrarFoto");
-// const profesional1 = document.getElementById("imagen1");
-// const profesional2 = document.getElementById("imagen2");
-// const profesional3 = document.getElementById("imagen3");
-
-
-// mostrarBoton.addEventListener("click", () => {
-//     const urls = urlInput.value.split ("","").map(url => url.trim());
-
-
-//     if(urls.length >=2){
-//         profesional1.src = urls[0];
-//         profesional2.src = urls[1];
-      
-//     } else {
-//         alert("Ingresa al menos dos URLs separadas por comas.");
-//     }
-
-//     urlInput.value = "";
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const urlInput = document.getElementById("photo2");
-// const mostrarBoton = document.getElementById("mostrarFoto");
-// const profesional1 = document.getElementById("imagen1");
-// const profesional2 = document.getElementById("imagen2");
-// const profesional3 = document.getElementById("imagen3");
-// let alternarImagen = false;
-
-// mostrarBoton.addEventListener("click", () => {
-//     const imagenUrl = urlInput.value;
-
-//     if(alternarImagen){
-
-    
-//     profesional1.src = imagenUrl;
-//     profesional2.src = "";
-//     } else {
-//         profesional2.src = imagenUrl;
-//         profesional1.src = "";
-//     }
-//     alternarImagen = !alternarImagen;
-    
-//     urlInput.value = "";
-// });
-// const nuevaImagen = document.createElement("img");
-// nuevaImagen.src = imagenUrl;
-
-// imagenesContainer.appendChild(nuevaImagen);
-
-
-
-
-// function insertarImagen(){
-//     let url = document.getElementById("photo2").value
-//     document.getElementById("profesional1").src =url
-//     document.getElementById("info1").style.display="block"
-// }
-
-// // function insertarImagen(){
-// //     let url =$("#profesional1").attr("src",url).show(1000)
-// // }
 
 
